@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <style>
+        @import url('http://fonts.googleapis.com/css2?family=Play&display=swap');
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="wrap"><div class="neon"><h1 class="logo">._.</h1></div></div>
+                
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button></button>
+                </ul>
+            </nav>
+            <div class="headertext">
+                <p class="animate">FRONTEND DEVELOPER</p>
+                <h1 class="animate">Hii I'm <span>Akash...,</span> <br>Aspiring Web Developer | Dedicated to Crafting Dynamic and User-Centric Websites </h1>
+                <marquee behavior="slide" direction=""><p>Here is my resume</p></marquee>
+                <a href="./Resume.pdf" download="" class="btn">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="./image/IMG_20231205_195257 (1).png" alt="">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>As a recent graduate with a degree in [ master's in computer science], I am eager to launch my career as a web developer. I bring a strong foundation in [HTML, CSS, JAVASCRIPT, REACTJS], coupled with a passion for creating dynamic and user-friendly websites. My academic background, coupled with hands-on projects, has equipped me with the skills to develop innovative and responsive web solutions. I am seeking an entry-level position where I can apply my technical skills, collaborate with a dynamic team, and contribute to the success of projects. I am committed to continuous learning and staying abreast of industry trends to deliver high-quality web solutions that meet and exceed client expectations.</p>
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('education')">Education</p>
+                        <p class="tablinks" onclick="opentab('certification')">Certfication</p>
+                    </div>
+                    <div class="tabcontents activetab" id="education">
+                        <ul>
+                            <li><span>Master's in computer science - 2023</span><br>Rathinam college of arts and science, Coimbatore</li>
+                            <li><span>Bachelor's of computer science - 2021</span><br>Bishop Heber College, Trichy</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="certification">
+                        <ul>
+                            <li><span>Python Full-Stack Development</span><br>Q-spider software testing institute,Bangalore</li>
+                            <li><span>Skills Gained</span><br>HTML, CSS, Javascript, ReactJS, Python, SQL </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------skills------------------ -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+            <div class="skillslist">
+                <div>
+                    <h2>HTML</h2>
+                    <img src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png" alt="" height="200px" width="200px">
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <h2>CSS</h2 >
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt="" height="200px" width="200px">
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <h1>Javascript</h1>
+                    <img src="https://logodix.com/logo/374728.png" alt="" height="200px" width="200px">
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <h1>React JS</h1>
+                    <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png" alt="" height="200px" width="200px">
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------project---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My projects</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="https://st3.depositphotos.com/6597960/14969/v/450/depositphotos_149690258-stock-illustration-application-for-buying-cinema-tickets.jpg" alt="">
+                    <div class="layer">
+                        <h3>Movie Ticket Booking</h3>
+                        <p>To book a Movie ticket using live data</p>
+                       <a href="https://github.com/akash02032001/movie_tkt">Link</a>
+                       </div>
+                </div>
+                <div class="work">
+                    <img src="https://img.freepik.com/premium-photo/portrait-group-university-students-graduation-day-created-with-generative-ai_762026-46754.jpg" alt="">
+                    <div class="layer">
+                        <h3>University API Fetching</h3>
+                        <p>To Fetch a University list by searching country name</p>
+                       <a href="https://github.com/akash02032001/universitylist">Link</a>
+                       </div>
+                </div>
+                <div class="work">
+                    <img src="https://i.pinimg.com/736x/3f/a7/23/3fa723982fd6ae41cadb06bf9453e4d9.jpg" alt="">
+                    <div class="layer">
+                        <h3>CRUD Operation using react</h3>
+                        <p>Its an crud operation by using local JSON</p>
+                       <a href="https://github.com/akash02032001/CRUD-operation">Link</a>
+                       </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn scroll-down">Scroll Down To Text Me</a>
+        </div>
+    </div>
+    <!-- ------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+           <div class="row">
+            <div class="contactl">
+                <h1 class="subtitle">Contact me</h1>
+                <p><span>Email :</span> www.akashmurugan@gmail.com</p>
+                <p><span>Phone :</span> 6381227712</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/akashmurugan03" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/?next=%2F&hl=en" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/akash02032001" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.youtube.com/@thalapathyy._.t9848" style="--socialAni:4"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="contactright">
+                <form name="submit-to-google-sheet">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <label for="">Email</label>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <label for="">Message</label>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" id="bt" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+           </div>
+        </div>
+    </div>
+    <!-- <script> -->
+        <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxC80AKbIxvEPDlmEBGLkVn3cybI4vtPKZpiOBD7gf6OLjH8JD-wk99Xx98nexCZVAj-w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message sent sucessfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+   <!-- --- </script> -- -->
+</body>
+</html>
